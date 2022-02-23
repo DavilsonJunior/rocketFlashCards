@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { View, FlatList, Text, Alert } from 'react-native';
+import { ScrollView, View, FlatList, Text, Alert } from 'react-native';
 
 import { Scoreboard } from '../../components/Scoreboard';
 import { Highlight } from '../../components/Highlight';
@@ -44,6 +44,7 @@ export function Home() {
   }
 
   return (
+    <ScrollView style={styles.root}>
     <View style={styles.container}>
       <Highlight />
       <Scoreboard reviewed={currentCard} />
@@ -75,5 +76,6 @@ export function Home() {
         <Button icon="push-pin" />
       </View>
     </View>
+    </ScrollView>
   );
 }

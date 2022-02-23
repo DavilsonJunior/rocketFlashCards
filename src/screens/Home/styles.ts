@@ -1,11 +1,14 @@
-import { StyleSheet } from 'react-native';
-import { getBottomSpace } from 'react-native-iphone-x-helper';
-import { COLORS } from '../../global/theme';
+import { StyleSheet } from "react-native";
+import { getBottomSpace } from "react-native-iphone-x-helper";
+import { COLORS } from "../../global/theme";
 
 export const styles = StyleSheet.create({
+  root: {
+    backgroundColor: COLORS.BACKGROUND,
+  },
   container: {
     flex: 1,
-    alignItems: 'center',
+    alignItems: "center",
     paddingHorizontal: 20,
     backgroundColor: COLORS.BACKGROUND,
   },
@@ -15,9 +18,9 @@ export const styles = StyleSheet.create({
     marginVertical: 34,
   },
   footer: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     marginBottom: getBottomSpace() + 17,
-    marginTop: 30
-  }
+    marginTop: 30,
+  },
 });

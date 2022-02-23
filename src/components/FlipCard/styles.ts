@@ -1,11 +1,11 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   card: {
-    backfaceVisibility: 'hidden'
+    backfaceVisibility: "hidden",
   },
   back: {
-    position: 'absolute',
+    position: "absolute",
     top: 0,
   },
 });
